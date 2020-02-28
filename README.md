@@ -1,4 +1,4 @@
-# flutter_quick_start
+# Flutter Quick Start
 
 A quick start flutter project for starting new projects.
 
