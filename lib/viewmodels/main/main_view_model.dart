@@ -25,3 +25,4 @@ class MainViewModel extends BaseViewModel {
     super.dispose();
   }
 }
+

@@ -11,21 +11,25 @@ class BaseViewModel extends ChangeNotifier {
 
   bool get loading => _loading;
 
+  bool _mounted = false;
+
+  bool get mounted => _mounted;
+
   void setBusy(bool value) {
     _loading = value;
     notifyListeners();
   }
+
+  final prefs = locator<StorageService>();
 
   AppLocalizationsDelegate _delegate;
 
   initDelegate() {
     _delegate = AppLocalizationsDelegate(
         newLocale:
-        prefs.fetchLocale != null ? Locale(prefs.fetchLocale) : null);
+            prefs.fetchLocale != null ? Locale(prefs.fetchLocale) : null);
     application.onLocaleChanged = _changeLanguage;
   }
-
-  final prefs = locator<StorageService>();
 
   Locale _appLocale;
 
@@ -65,5 +69,11 @@ class BaseViewModel extends ChangeNotifier {
     }
     _delegate = AppLocalizationsDelegate(newLocale: _appLocale);
     notifyListeners();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _mounted = true;
   }
 }

@@ -27,8 +27,10 @@ class DialogResponse {
   final bool confirmed;
 
   DialogResponse(
+  {
     this.fieldOne,
     this.fieldTwo,
     this.confirmed,
+}
   );
 }

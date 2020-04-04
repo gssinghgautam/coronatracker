@@ -10,5 +10,4 @@ abstract class BaseService{
   final _storageService = locator<StorageService>();
   final _navigationService = locator<NavigationService>();
 
-
 }

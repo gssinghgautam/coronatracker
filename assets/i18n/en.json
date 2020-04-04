@@ -1,3 +1,12 @@
 {
-
+  "app_name_title" : "Quick Start",
+  "done_title": "Done",
+  "error_title": "Oops!",
+  "error_message": "Something went wrong, Please try again",
+  "done_button_label": "Done",
+  "session_expired_title": "Session Expired!",
+  "session_expired_message": "Please login back",
+  "no_internet_connection_title": "No Internet Connection",
+  "no_internet_connection_message": "Please check your internet connection",
+  "enable_wifi_button_label": "Enable Wifi"
 }

@@ -1,0 +1,11 @@
+const AppNameTitle = "app_name_title";
+const DoneTitle = "done_title";
+const ErrorTitle = "error_title";
+const ErrorMessage = "error_message";
+const DoneButtonLabel = "done_button_label";
+const SessionExpiredTitle = "session_expired_title";
+const SessionExpiredMessage = "session_expired_message";
+const LogInTitle = "log_in_title";
+const String NoInternetConnectionTitle = "no_internet_connection_title";
+const String NoInternetConnectionMessage = "no_internet_connection_title";
+const String EnableWifiLabel = "enable_wifi_button_label";

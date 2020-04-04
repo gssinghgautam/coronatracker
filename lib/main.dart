@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_quick_start/localization/app_localizations.dart';
 import 'package:flutter_quick_start/localization/application.dart';
+import 'package:flutter_quick_start/localization/localization_keys.dart';
 import 'package:flutter_quick_start/locator.dart';
 import 'package:flutter_quick_start/router/router.dart';
 import 'package:flutter_quick_start/services/common/connectivity_service.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       create: (context) => ConnectivityService().connectivityStream,
       child: ViewModelProvider<MainViewModel>.withConsumer(
         viewModel: MainViewModel(),
-        onModelReady: (model) {},
+        onModelReady: (model) => model.initDelegate(),
         builder: (context, model, child) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
@@ -57,7 +58,7 @@ class MyApp extends StatelessWidget {
             navigatorKey: locator<NavigationService>().navigationKey,
             home: SplashView(),
             onGenerateRoute: generateRoute,
-            onGenerateTitle: (context) => AppLocalizations.of(context).translate("key"),
+            onGenerateTitle: (context) => AppLocalizations.of(context).translate(AppNameTitle),
           );
         },
       ),

@@ -7,7 +7,7 @@ enum ConnectivityStatus { WiFi, Cellular, Offline }
 class ConnectivityService {
   //Create on private controller
   StreamController<ConnectivityStatus> _connectionStatusController =
-      StreamController<ConnectivityStatus>();
+  StreamController<ConnectivityStatus>();
 
   Stream<ConnectivityStatus> get connectivityStream =>
       _connectionStatusController.stream;

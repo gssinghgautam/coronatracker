@@ -15,6 +15,9 @@ class LocalStorage extends StorageService {
   String get pushToken => prefs.getString(PUSH_TOKEN) ?? "";
 
   @override
+  String get fetchLocale => "en";
+
+  @override
   Future<bool> saveAuthToken(String value) {
     return prefs.setString(AUTH_TOKEN, value);
   }
@@ -30,5 +33,8 @@ class LocalStorage extends StorageService {
   }
 
   @override
-  String get fetchLocale => "";
+  Future<bool> clearAll() {
+    // TODO: implement clearAll
+    throw UnimplementedError();
+  }
 }

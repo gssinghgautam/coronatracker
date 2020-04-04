@@ -10,4 +10,6 @@ abstract class StorageService {
   Future<bool> saveAuthToken(String value);
 
   Future<bool> saveLocale(String value);
+
+  Future<bool> clearAll();
 }

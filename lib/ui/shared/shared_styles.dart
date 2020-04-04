@@ -54,103 +54,41 @@ TextStyle bottomBarItemTextStyle = GoogleFonts.lato(
 
 TextStyle appBarTitleTextStyle = GoogleFonts.lato(
   textStyle: TextStyle(
-    color: titleColor,
+    color: black,
     fontWeight: FontWeight.w700,
     fontSize: 20.0,
   ),
 );
 
-TextStyle buttonTextStyle = GoogleFonts.lato(
-  color: Colors.white,
-  fontWeight: FontWeight.w600,
-  fontSize: 16.0,
-);
-
-TextStyle introTitleStyle = GoogleFonts.lato(
-  color: titleColor,
+final errorTitleStyle = GoogleFonts.lato(
   fontWeight: FontWeight.w700,
-  fontSize: 22.0,
+  color: black,
+  fontSize: 16.0
 );
 
-TextStyle introSubTitleStyle = GoogleFonts.lato(
-  color: subTitleColor,
-  fontWeight: FontWeight.w500,
-  fontSize: 16.0,
-);
-
-TextStyle headingTitleStyle = GoogleFonts.lato(
-  textStyle: TextStyle(
-    color: titleColor,
-    fontSize: 25.0,
-    fontWeight: FontWeight.w500,
-  ),
-);
-
-TextStyle headingSubTitleStyle = GoogleFonts.lato(
-  textStyle: TextStyle(
-    color: titleColor,
+final errorMessageStyle = GoogleFonts.lato(
     fontWeight: FontWeight.w400,
-    decoration: TextDecoration.none,
-    fontSize: 16.0,
-  ),
+    color: blueGrey,
+    fontSize: 16.0
 );
 
-TextStyle ratingTextStyle = GoogleFonts.lato(
-  textStyle: TextStyle(
-    color: primaryColor,
-    fontWeight: FontWeight.w500,
-    fontSize: 16.0,
-  ),
+final errorButtonStyle = GoogleFonts.lato(
+  fontSize: 15.0,
+  color: blueGrey,
+  fontWeight: FontWeight.w700
 );
 
-TextStyle ratingTitleStyle = GoogleFonts.lato(
-  letterSpacing: 0.5,
-  textStyle: TextStyle(
-    color: titleColor,
-    fontSize: 16.0,
-    fontWeight: FontWeight.w500,
-  ),
+final buttonTextStyle = GoogleFonts.lato(
+  fontWeight: FontWeight.w700,
+  color: blueGrey,
+  fontSize: 15.0
 );
 
-TextStyle serviceTitleStyle = GoogleFonts.lato(
-  letterSpacing: 0.5,
-  textStyle: TextStyle(
-    color: titleColor,
-    fontSize: 16.0,
+final buttonWhiteTextStyle = GoogleFonts.lato(
     fontWeight: FontWeight.w700,
-  ),
+    color: white,
+    fontSize: 15.0
 );
-
-TextStyle unselectedLabelStyle = GoogleFonts.lato(
-  color: subTitleColor,
-  fontSize: 16.0,
-  fontWeight: FontWeight.w500,
-);
-
-TextStyle labelStyle = GoogleFonts.lato(
-  color: primaryColor,
-  fontSize: 16.0,
-  fontWeight: FontWeight.w500,
-);
-
-TextStyle dashboardOptionTextStyle = GoogleFonts.lato(
-  color: titleColor,
-  fontSize: 14.0,
-  fontWeight: FontWeight.w600,
-);
-
-TextStyle stockMessageTitleStyle = GoogleFonts.lato(
-  color: subTitleColor,
-  fontSize: 14.0,
-  fontWeight: FontWeight.w500,
-);
-
-TextStyle summaryLabelStyle = GoogleFonts.lato(
-  fontWeight: FontWeight.w500,
-  fontSize: 18.0,
-  color: subTitleColor,
-);
-
 List<BoxShadow> boxShadows= <BoxShadow>[
   BoxShadow(
     color: Colors.black12,
