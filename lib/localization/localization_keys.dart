@@ -3,6 +3,7 @@ const DoneTitle = "done_title";
 const ErrorTitle = "error_title";
 const ErrorMessage = "error_message";
 const DoneButtonLabel = "done_button_label";
+const OKButtonLabel = "ok_button_label";
 const SessionExpiredTitle = "session_expired_title";
 const SessionExpiredMessage = "session_expired_message";
 const LogInTitle = "log_in_title";

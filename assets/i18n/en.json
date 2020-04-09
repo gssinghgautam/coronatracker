@@ -4,6 +4,7 @@
   "error_title": "Oops!",
   "error_message": "Something went wrong, Please try again",
   "done_button_label": "Done",
+  "ok_button_label": "OK",
   "session_expired_title": "Session Expired!",
   "session_expired_message": "Please login back",
   "no_internet_connection_title": "No Internet Connection",

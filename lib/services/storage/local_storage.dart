@@ -34,7 +34,6 @@ class LocalStorage extends StorageService {
 
   @override
   Future<bool> clearAll() {
-    // TODO: implement clearAll
-    throw UnimplementedError();
+    return prefs.clear();
   }
 }
