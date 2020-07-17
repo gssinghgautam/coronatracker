@@ -1,1 +1,1 @@
-const IntroRoutePage = "intro";const LoginRoutePage = "login";
+const HomeRoutePage = "home";

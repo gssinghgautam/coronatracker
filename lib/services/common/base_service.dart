@@ -1,7 +1,6 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_quick_start/constants/routes_name.dart';
 import 'package:flutter_quick_start/localization/localization_keys.dart';
 import 'package:flutter_quick_start/locator.dart';
 import 'package:flutter_quick_start/services/common/dialog_service.dart';
@@ -102,12 +101,12 @@ abstract class BaseService{
     );
   }
 
-  void logout() async {
+  /*void logout() async {
     bool isCleared = await _storageService.clearAll();
     if (isCleared) {
       await navigationService.navigateUntilRemoved(LoginRoutePage);
     }
-  }
+  }*/
 
   void showSessionExpiredDialog() {
     _showDialog(
@@ -116,7 +115,7 @@ abstract class BaseService{
         description: SessionExpiredMessage,
         icon: "assets/images/error.png",
         onPositiveButtonClick: () {
-          logout();
+          //logout();
         },
         positiveButtonLabel: LogInTitle,
       ),

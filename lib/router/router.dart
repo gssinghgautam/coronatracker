@@ -1,7 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_quick_start/constants/routes_name.dart';
+import 'package:flutter_quick_start/ui/views/home/home_view.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
+  switch (settings.name) {
+    case HomeRoutePage:
+      return _getPageRoute(
+        routeName: settings.name,
+        viewToShow: HomeView(),
+      );
+  }
   return MaterialPageRoute(
     builder: (_) => Scaffold(
       body: Center(

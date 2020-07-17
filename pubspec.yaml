@@ -34,6 +34,7 @@ dependencies:
   timeago: ^2.0.26
   connectivity: ^0.4.8+1
   app_settings: 3.0.1
+  lottie: ^0.3.3
 
 dev_dependencies:
   flutter_test:

@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quick_start/localization/app_localizations.dart';
-import 'package:flutter_quick_start/ui/shared/app_colors.dart';
 import 'package:flutter_quick_start/ui/shared/shared_styles.dart';
 import 'package:flutter_quick_start/ui/shared/ui_helper.dart';
 import 'package:flutter_quick_start/extension/string_extension.dart';
 import 'package:flutter_quick_start/ui/widgets/busy_button.dart';
-import 'package:flutter_quick_start/ui/widgets/outline_busy_button.dart';
 
 class ErrorWidgetView extends StatelessWidget {
   final String title;
